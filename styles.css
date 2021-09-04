@@ -1,0 +1,40 @@
+button.copy-transactions-button {
+    float: right;
+    border: none;
+    background: #ec0e16;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 100px;
+}
+
+.toast-message {
+    position: fixed;
+    left: 50%;
+    bottom: 70px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    border-radius: 5px;
+    transform: translateX(-50%);
+    font-size: 16px;
+    min-width: 150px;
+    text-align: center;
+    z-index: 999999;
+    animation: toast-animation 0.7s;
+}
+
+@keyframes toast-animation {
+    0% {
+        transform: translateX(-50%) scale(0);
+    }
+    50% {
+        transform: translateX(-50%) scale(1.5);
+    }
+    100% {
+        transform: translateX(-50%) scale(1);
+    }
+}

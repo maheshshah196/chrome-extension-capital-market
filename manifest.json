@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "capital market feature extender",
+    "version": "1.0.0",
+    "description": "This chrome extension adds copy button to capital market transaction table",
+    "icons": {
+        "16": "icon-16.png",
+        "32": "icon-32.png",
+        "48": "icon-48.png",
+        "128": "icon-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.capitalmarket.com/PortfolioTracker/Home.aspx"
+            ],
+            "css": [
+                "styles.css"
+            ],
+            "js": [
+                "jquery-3.6.0.min.js",
+                "content-script.js"
+            ]
+        }
+    ],
+    "host_permissions": ["https://www.capitalmarket.com/"]
+}
