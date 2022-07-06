@@ -6,7 +6,7 @@
     const COPY_BUTTON_CLASS = "copy-transactions-button";
     const COPY_BUTTON_SELECTOR = `button.${COPY_BUTTON_CLASS}`;
     const CHECK_INTERRVAL = 500;
-    const transactionTableColumns = ["date", "action", "quantity", "price", "amount"];
+    const transactionTableColumns = [null, "date", "action", "quantity", "price", "amount"];
     const COPY_TOAST_TIMEOUT = 3000;
 
     const utils = {
